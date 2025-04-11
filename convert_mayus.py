@@ -1,5 +1,6 @@
 # Función para convertir una lista de palabras a mayúsculas
 def convertir_a_mayusculas(palabras):
+    """Convierte una lista de palabras a mayúsculas."""
     return [palabra.upper() for palabra in palabras]
 
 # Ejemplo con una lista predeterminada
@@ -21,5 +22,10 @@ def procesar_lista_usuario():
 
 # Ejecución del programa
 if __name__ == "__main__":
-    ejemplo_lista_predeterminada()
-    procesar_lista_usuario()
+    palabras = ["hola", "mundo", "python"]
+    print("Lista predeterminada:", palabras)
+    print("Conversión a mayúsculas:", convertir_a_mayusculas(palabras))
+
+    entrada = input("\nIntroduce palabras en minúsculas separadas por comas: ")
+    palabras_usuario = [palabra.strip() for palabra in entrada.split(",")]
+    print("Conversión a mayúsculas:", convertir_a_mayusculas(palabras_usuario))

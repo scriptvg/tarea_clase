@@ -1,3 +1,5 @@
+# ===========================  =========================== #
+
 from colorama import Fore, Style, init
 from tamano_palabra import palabras, longitudes
 from dic_redondear import redondear_diccionario
